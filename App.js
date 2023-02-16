@@ -18,21 +18,21 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <>
-      <ExpoStatusBar style="light" backgroundColor="black" />
+      <ExpoStatusBar style='light' backgroundColor='black' />
 
       <NavigationContainer>
         <Provider store={store}>
           <TailwindProvider>
             <Stack.Navigator>
-              <Stack.Screen name="Home" component={HomeScreen} />
-              <Stack.Screen name="Restaurant" component={RestaurantScreen} />
+              <Stack.Screen name='Home' component={HomeScreen} />
+              <Stack.Screen name='Restaurant' component={RestaurantScreen} />
               <Stack.Screen
-                name="Basket"
+                name='Basket'
                 component={BasketScreen}
                 options={{ headerShown: false, presentation: "modal" }}
               />
               <Stack.Screen
-                name="PreparingOrderScreen"
+                name='PreparingOrderScreen'
                 component={PreparingOrderScreen}
                 options={{
                   headerShown: false,
@@ -40,7 +40,7 @@ export default function App() {
                 }}
               />
               <Stack.Screen
-                name="Delivery"
+                name='Delivery'
                 component={DeliveryScreen}
                 options={{
                   headerShown: false,
@@ -48,7 +48,7 @@ export default function App() {
                 }}
               />
               <Stack.Screen
-                name="Search"
+                name='Search'
                 component={SearchScreen}
                 options={{
                   headerShown: false,
